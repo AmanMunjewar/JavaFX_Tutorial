@@ -14,7 +14,7 @@ public class App extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("direction.fxml"));
         Scene scene = new Scene(root, 600, 400);
 
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Interactive Builder");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
