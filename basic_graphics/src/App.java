@@ -3,6 +3,8 @@ import javax.swing.text.TextAction;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
@@ -84,12 +86,17 @@ public class App extends Application {
         circle.setStroke(line_text.getFill());
         circle.setStrokeWidth(4);
 
+        Image image = new Image("images.png");
+        ImageView imageView = new ImageView(image);
+        imageView.setX(50);
+        imageView.setY(700);
+
 
         root.getChildren().addAll(text, line_text, line, rectanglText, rectangle, 
-        polygon_text, polygon, circleText, circle);
+        polygon_text, polygon, circleText, circle, imageView);
 
         primaryStage.setScene(scene);
-        primaryStage.setHeight(800);
+        primaryStage.setHeight(1000);
         primaryStage.setWidth(900);
         primaryStage.show();
     }
