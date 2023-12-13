@@ -22,8 +22,7 @@ public class Controller {
 
             Scene scene = ((Node)event.getSource()).getScene();
             String css = this.getClass().getResource("day_mode.css").toExternalForm();
-            scene.getStylesheets().clear();
-            scene.getStylesheets().add(css);
+            scene.getStylesheets().get(1);
 
             
         } else {
@@ -32,8 +31,7 @@ public class Controller {
             
             Scene scene = ((Node)event.getSource()).getScene();
             String css = this.getClass().getResource("night_mode.css").toExternalForm();
-            scene.getStylesheets().clear();
-            scene.getStylesheets().add(css);
+            scene.getStylesheets().get(0);
         }
     }
     
