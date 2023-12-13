@@ -16,22 +16,19 @@ public class Controller {
     private boolean swap=true;
 
     public void change_color(ActionEvent event) throws IOException{
-        if (swap) {
-            swap=false;
-            day_night.setText("Night");
 
+        if (day_night.getText().equals("Day")) {
+            day_night.setText("Night");
             Scene scene = ((Node)event.getSource()).getScene();
             String css = this.getClass().getResource("day_mode.css").toExternalForm();
-            scene.getStylesheets().get(1);
-
-            
+            scene.getStylesheets().clear();
+            scene.getStylesheets().add(css);
         } else {
-            swap=true;
             day_night.setText("Day");
-            
             Scene scene = ((Node)event.getSource()).getScene();
             String css = this.getClass().getResource("night_mode.css").toExternalForm();
-            scene.getStylesheets().get(0);
+            scene.getStylesheets().clear();
+            scene.getStylesheets().add(css);
         }
     }
     

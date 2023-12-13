@@ -14,8 +14,7 @@ public class App extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("scene.fxml"));
         Scene scene = new Scene(root, 600, 500);
         String css = this.getClass().getResource("night_mode.css").toExternalForm();
-        String css2 = this.getClass().getResource("day_mode.css").toExternalForm();
-        scene.getStylesheets().addAll(css, css2);
+        scene.getStylesheets().add(css);
 
         primaryStage.setTitle("CSS styling");
         primaryStage.setScene(scene);
