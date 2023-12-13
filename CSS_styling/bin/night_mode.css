@@ -1,0 +1,23 @@
+.root{
+    -fx-background-color: Black;
+}
+
+.label{
+    -fx-text-fill: White;
+    -fx-font-family: "Lucida console";
+    -fx-font-size: 20;
+}
+
+#titleLabel{
+    -fx-font-size: 60;
+}
+
+.scene{
+    -fx-alignment: centre;
+}
+
+#day_night {
+    -fx-background-color: #BB86FC;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 20;
+  }
