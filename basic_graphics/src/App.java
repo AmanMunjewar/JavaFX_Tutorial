@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Polygon;
 import javafx.scene.shape.Rectangle;
@@ -24,7 +25,7 @@ public class App extends Application {
         Font defaulFont = Font.font("Lucida Console", 30);
 
         Text text = new Text();
-        text.setText("Hello there");
+        text.setText("Graphics for javaFX");
         text.setX(50);
         text.setY(50);
         text.setFont(defaulFont);
@@ -72,8 +73,20 @@ public class App extends Application {
         polygon.setStroke(line_text.getFill());
         polygon.setStrokeWidth(4);
 
+        Text circleText = new Text("2) Circle");
+        circleText.setX(50);
+        circleText.setY(480);
+        circleText.setFont(defaulFont);
+        circleText.setFill(line_text.getFill());
+
+        Circle circle = new Circle(120, 585, 80, rectangle.getFill());
+        circle.setOpacity(0.8);
+        circle.setStroke(line_text.getFill());
+        circle.setStrokeWidth(4);
+
+
         root.getChildren().addAll(text, line_text, line, rectanglText, rectangle, 
-        polygon_text, polygon);
+        polygon_text, polygon, circleText, circle);
 
         primaryStage.setScene(scene);
         primaryStage.setHeight(800);
