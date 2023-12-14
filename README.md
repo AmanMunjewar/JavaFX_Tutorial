@@ -1,1 +1,1 @@
-JavaFX tutorial preparing for CodSoft Internship.
+A series of JavaFX mini-projects produced during learning phase.
