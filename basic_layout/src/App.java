@@ -20,9 +20,9 @@ public class App extends Application{
         primaryStage.setWidth(500);
         primaryStage.setX(40);
         primaryStage.setY(40);
-        primaryStage.setFullScreen(true);
-        primaryStage.setFullScreenExitHint("Press q to exit.");
-        primaryStage.setFullScreenExitKeyCombination(KeyCombination.valueOf("q"));
+        // primaryStage.setFullScreen(true);
+        // primaryStage.setFullScreenExitHint("Press q to exit.");
+        // primaryStage.setFullScreenExitKeyCombination(KeyCombination.valueOf("q"));
         primaryStage.setScene(scene);
         primaryStage.show();
     }

@@ -22,11 +22,14 @@ public class Scene1Controller {
         root = loader.load();
 
         Scene2Controller scene2Controller = loader.getController();
-        scene2Controller.changeName(nameInput.getText());
+
+        String userName = nameInput.getText();
+        userName = userName.toUpperCase();
+        
+        scene2Controller.changeName(userName);
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
-
         
         stage.setScene(scene);
         stage.show();

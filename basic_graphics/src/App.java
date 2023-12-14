@@ -73,7 +73,7 @@ public class App extends Application {
         polygon.setStroke(line_text.getFill());
         polygon.setStrokeWidth(4);
 
-        Text circleText = new Text("2) Circle");
+        Text circleText = new Text("4) Circle");
         circleText.setX(50);
         circleText.setY(480);
         circleText.setFont(defaulFont);
@@ -84,6 +84,12 @@ public class App extends Application {
         circle.setStroke(line_text.getFill());
         circle.setStrokeWidth(4);
 
+        Text imageText = new Text("5) Image");
+        imageText.setX(50);
+        imageText.setY(690);
+        imageText.setFont(defaulFont);
+        imageText.setFill(line_text.getFill());
+
         Image image = new Image("images.png");
         ImageView imageView = new ImageView(image);
         imageView.setX(50);
@@ -91,7 +97,7 @@ public class App extends Application {
 
 
         root.getChildren().addAll(text, line_text, line, rectanglText, rectangle, 
-        polygon_text, polygon, circleText, circle, imageView);
+        polygon_text, polygon, circleText, circle, imageText, imageView);
 
         primaryStage.setScene(scene);
         primaryStage.setHeight(1000);
