@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Label fx:id="myLabel" alignment="CENTER" layoutY="43.0" prefHeight="18.0" prefWidth="600.0" text="What do you want to eat">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4289996325969696" green="0.6899999976158142" blue="0.40709999203681946" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3675000071525574" green="0.5504980683326721" blue="0.75" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <RadioButton fx:id="r1Button" layoutX="47.0" layoutY="168.0" mnemonicParsing="false" onAction="#action" prefHeight="31.0" prefWidth="103.0" text="Pizza">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4955752043597466" centerY="0.5" focusAngle="-4.09" focusDistance="-0.4954128090394746" radius="0.8394495237857924">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.753786563873291" green="0.5393999814987183" blue="0.8700000047683716" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6687999963760376" green="0.8799999952316284" blue="0.6862034797668457" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <toggleGroup>
+            <ToggleGroup fx:id="groupe1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="r2Button" layoutX="248.0" layoutY="168.0" mnemonicParsing="false" onAction="#action" prefHeight="31.0" prefWidth="103.0" text="Fries" toggleGroup="$groupe1">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4955752043597466" centerY="0.5" focusAngle="-4.09" focusDistance="-0.4954128090394746" radius="0.8394495237857924">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8842105269432068" green="0.3176608085632324" blue="0.47818323969841003" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.762022078037262" green="0.7789473533630371" blue="0.2711890935897827" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </RadioButton>
+      <RadioButton fx:id="r3Button" layoutX="427.0" layoutY="168.0" mnemonicParsing="false" onAction="#action" prefHeight="31.0" prefWidth="103.0" text="Burger" toggleGroup="$groupe1">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4955752043597466" centerY="0.5" focusAngle="-4.09" focusDistance="-0.4954128090394746" radius="0.8394495237857924">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.40654972195625305" green="0.6947368383407593" blue="0.6947368383407593" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.833457887172699" green="0.8600000143051147" blue="0.5848000049591064" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </RadioButton>
+   </children>
+</AnchorPane>
